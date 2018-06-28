@@ -1,0 +1,16 @@
+新增功能：
+
+ 1、用户注册之后，检查是否为移动手机号，如果是的话，自动添加为飞信好友！~
+
+ 2、用户在选择的时候，可以分类别进行选择！
+   
+    如用户可以选择济宁学院-->教学科研机构--->然后选择需要订阅的系别！
+
+2013年4月28日  新增用户分组管理
+ 1、新增数据表 user_group（autoid，group_name，site_name）
+ 2、现在分两个组:admin和jnxy
+ 3、改动的文件有 order.php 和 useradd.php
+2013年4月30日  新增正文关键字匹配
+ 1、修改数据库的news_update表，新增news_content列。类型为string--mediumtext
+ 2、修改sphider.inc的入库函数，新增正文入库功能。
+ 3、修改的文件有sphider.inc   remind.inc.php
